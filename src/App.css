@@ -1,38 +1,105 @@
-.App {
-  text-align: center;
+body {
+	background: #f8f9fb;
+	font-family: 'Poppins', Arial, sans-serif;
+	color: #4d4f62;
+	margin: 0;
+	padding: 0;
+	min-height: 100vh;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.container {
+	max-width: 1100px;
+	margin: 0 auto;
+	padding: 60px 20px 0 20px;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.header {
+	text-align: center;
+	margin-bottom: 60px;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+.header h1 {
+	font-weight: 200;
+	font-size: 2.2rem;
+	margin: 0 0 10px 0;
+	color: #4d4f62;
 }
 
-.App-link {
-  color: #61dafb;
+.header h1 span {
+	font-weight: 600;
+	color: #4d4f62;
+	display: block;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.header p {
+	color: #a3a5ae;
+	font-size: 1rem;
+	margin: 0 auto;
+	max-width: 500px;
+}
+
+.cards {
+	display: grid;
+	grid-template-columns: repeat(3, 1fr);
+	grid-template-rows: repeat(2, 1fr);
+	gap: 30px;
+	justify-items: center;
+	align-items: center;
+}
+
+.card {
+	background: #fff;
+	border-radius: 10px;
+	box-shadow: 0 8px 24px rgba(131, 166, 210, 0.18);
+	padding: 32px 28px 28px 28px;
+	width: 100%;
+	max-width: 340px;
+	min-height: 250px;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+	position: relative;
+	box-sizing: border-box;
+}
+
+.card h2 {
+	font-size: 1.2rem;
+	font-weight: 600;
+	margin: 0 0 10px 0;
+	color: #4d4f62;
+}
+
+.card p {
+	color: #a3a5ae;
+	font-size: 0.98rem;
+	margin: 0 0 24px 0;
+	flex: 1;
+}
+
+.card img {
+	width: 48px;
+	align-self: flex-end;
+}
+
+.card-supervisor {
+	border-top: 4px solid #45d3d3;
+	grid-column: 1;
+	grid-row: 1 / span 2;
+	align-self: center;
+}
+.card-team {
+	border-top: 4px solid #ea5353;
+	grid-column: 2;
+	grid-row: 1;
+}
+.card-karma {
+	border-top: 4px solid #fcbf3d;
+	grid-column: 2;
+	grid-row: 2;
+}
+.card-calculator {
+	border-top: 4px solid #549ef2;
+	grid-column: 3;
+	grid-row: 1 / span 2;
+	align-self: center;
 }

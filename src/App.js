@@ -1,25 +1,38 @@
-import logo from './logo.svg';
-import './App.css';
+import Supervisor from "./icon-supervisor.svg";
+import TeamBuilder from "./icon-team-builder.svg";
+import Karma from "./icon-karma.svg";
+import Calculator from "./icon-calculator.svg";
+import "./App.css";
 
-function App() {
+export default function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+  <div className="container">
+    <header className="header">
+      <h1>Reliable, efficient delivery<span>Powered by Technology</span></h1>
+      <p>Our Artificial Intelligence powered tools use millions of project data points to ensure that your project is successful</p>
+    </header>
+    <main className="cards">
+      <div className="card card-supervisor">
+        <h2>Supervisor</h2>
+        <p>Monitors activity to identify project roadblocks</p>
+        <img src={Supervisor}/>
+      </div>
+      <div className="card card-team">
+        <h2>Team Builder</h2>
+        <p>Scans our talent network to create the optimal team for your project</p>
+        <img src={TeamBuilder}/>
+      </div>
+      <div className="card card-calculator">
+        <h2>Calculator</h2>
+        <p>Uses data from past projects to provide better delivery estimates</p>
+        <img src={Calculator}/>
+      </div>
+      <div className="card card-karma">
+        <h2>Karma</h2>
+        <p>Regularly evaluates our talent to ensure quality</p>
+        <img src={Karma}/>
+      </div>
+    </main>
+  </div>
   );
 }
-
-export default App;
