@@ -15,22 +15,22 @@ export default function App() {
       <div className="card card-supervisor">
         <h2>Supervisor</h2>
         <p>Monitors activity to identify project roadblocks</p>
-        <img src={Supervisor}/>
+        <img src={Supervisor} alt="Supervisor icon"/>
       </div>
       <div className="card card-team">
         <h2>Team Builder</h2>
         <p>Scans our talent network to create the optimal team for your project</p>
-        <img src={TeamBuilder}/>
+        <img src={TeamBuilder} alt="Team Builder icon"/>
       </div>
       <div className="card card-calculator">
         <h2>Calculator</h2>
         <p>Uses data from past projects to provide better delivery estimates</p>
-        <img src={Calculator}/>
+        <img src={Calculator} alt="Calculator icon"/>
       </div>
       <div className="card card-karma">
         <h2>Karma</h2>
         <p>Regularly evaluates our talent to ensure quality</p>
-        <img src={Karma}/>
+        <img src={Karma} alt="Karma icon"/>
       </div>
     </main>
   </div>
